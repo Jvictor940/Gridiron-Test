@@ -18,7 +18,7 @@ const putAthlete = (req, res, next) => {
     res
     .status(200)
     .setHeader('Content-Type', 'application/json')
-    .json({ message: 'Updated an Athletes!'})
+    .json({ message: `Updated the profile of ${req.body.userName}!`})
 }
 
 const deleteAthletes = (req, res, next) => {
